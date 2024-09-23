@@ -1,4 +1,5 @@
 package ejercicio9PD2;
+
 public class NUMEROS{
     private int numero;
     private int opuesto;
@@ -7,7 +8,7 @@ public class NUMEROS{
     }
     public NUMEROS(int numero){
         this.numero=numero;
-        this.opuesto= Opuesto(numero);
+        this.opuesto= (187-numero);
     }
     //Setters
     public void setNumero(int numero){
@@ -15,7 +16,7 @@ public class NUMEROS{
 
     }
     public void setOpuesto(int numero){
-        this.opuesto= Opuesto(numero);
+        this.opuesto= (187-numero);
 
     }
     //Getters
@@ -25,13 +26,4 @@ public class NUMEROS{
     public int getNumero(){
         return numero;
     }
-    //Metodo para hallar el opuesto
-    public static int Opuesto(int numero){
-        int opuesto;
-        opuesto=(187-numero)%187;
-        if(opuesto<0){
-            opuesto+=187;
-        }
-        return opuesto;
-    }    
 }
