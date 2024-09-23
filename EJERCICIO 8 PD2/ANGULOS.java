@@ -1,4 +1,4 @@
-package problema8pc2;
+package problema8pd2;
 
 public class ANGULOS {
     //ATRIBUTOS
